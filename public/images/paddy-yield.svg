@@ -1,0 +1,64 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="16" fill="#121215"/>
+  <path d="M0 80H800M0 160H800M0 240H800M0 320H800M0 400H800" stroke="#1F1F24" stroke-width="1"/>
+  <path d="M160 0V500M320 0V500M480 0V500M640 0V500" stroke="#1F1F24" stroke-width="1"/>
+
+  <!-- Main Container -->
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#0B0B0E" stroke="#27272A" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="50" y="40" width="700" height="44" rx="12" fill="#18181B"/>
+  <circle cx="76" cy="62" r="5" fill="#EF4444"/>
+  <circle cx="94" cy="62" r="5" fill="#F59E0B"/>
+  <circle cx="112" cy="62" r="5" fill="#10B981"/>
+  <rect x="150" y="52" width="280" height="20" rx="6" fill="#27272A"/>
+  <text x="162" y="66" fill="#A1A1AA" font-family="monospace" font-size="11">ml-analytics/paddy-yield-eval</text>
+
+  <!-- Left Chart: Yield Trend & Prediction -->
+  <rect x="75" y="105" width="400" height="330" rx="10" fill="#141418" stroke="#27272A"/>
+  <text x="95" y="135" fill="#F5F5F5" font-family="sans-serif" font-size="14" font-weight="600">Model Performance & Forecast</text>
+  
+  <!-- Graph background grid -->
+  <rect x="95" y="155" width="360" height="230" rx="6" fill="#0D0D10" stroke="#1F1F24"/>
+  <path d="M95 210H455M95 265H455M95 320H455" stroke="#1A1A22" stroke-width="1"/>
+  <path d="M185 155V385M275 155V385M365 155V385" stroke="#1A1A22" stroke-width="1"/>
+
+  <!-- Model Prediction Line curves -->
+  <path d="M110 350 L160 310 L220 280 L280 240 L340 190 L400 170" stroke="#7C3AED" stroke-width="3" fill="none"/>
+  <!-- Secondary Comparison Curve -->
+  <path d="M110 360 L160 330 L220 310 L280 270 L340 230 L400 210" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+
+  <!-- Data points -->
+  <circle cx="110" cy="350" r="4" fill="#7C3AED"/>
+  <circle cx="160" cy="310" r="4" fill="#7C3AED"/>
+  <circle cx="220" cy="280" r="4" fill="#7C3AED"/>
+  <circle cx="280" cy="240" r="4" fill="#7C3AED"/>
+  <circle cx="340" cy="190" r="5" fill="#10B981" stroke="#F5F5F5" stroke-width="1.5"/>
+  <circle cx="400" cy="170" r="4" fill="#7C3AED"/>
+
+  <!-- Legend -->
+  <rect x="95" y="398" width="12" height="12" rx="3" fill="#7C3AED"/>
+  <text x="112" y="408" fill="#A1A1AA" font-family="sans-serif" font-size="10">Random Forest</text>
+  
+  <rect x="200" y="398" width="12" height="12" rx="3" fill="#3B82F6"/>
+  <text x="217" y="408" fill="#A1A1AA" font-family="sans-serif" font-size="10">KNN / SVM</text>
+
+  <!-- Right Side Algorithm Comparison -->
+  <rect x="495" y="105" width="230" height="330" rx="10" fill="#141418" stroke="#27272A"/>
+  <text x="515" y="135" fill="#F5F5F5" font-family="sans-serif" font-size="14" font-weight="600">Evaluated Models</text>
+
+  <!-- Model 1 -->
+  <rect x="515" y="160" width="190" height="55" rx="6" fill="#1A1A20" stroke="#7C3AED" stroke-width="1"/>
+  <text x="527" y="180" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="600">Random Forest</text>
+  <text x="527" y="198" fill="#A1A1AA" font-family="sans-serif" font-size="10">Ensemble Regressor</text>
+
+  <!-- Model 2 -->
+  <rect x="515" y="225" width="190" height="55" rx="6" fill="#1A1A20"/>
+  <text x="527" y="245" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="600">K-Nearest Neighbors</text>
+  <text x="527" y="263" fill="#A1A1AA" font-family="sans-serif" font-size="10">Distance Based</text>
+
+  <!-- Model 3 -->
+  <rect x="515" y="290" width="190" height="55" rx="6" fill="#1A1A20"/>
+  <text x="527" y="310" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="600">Decision Tree & SVM</text>
+  <text x="527" y="328" fill="#A1A1AA" font-family="sans-serif" font-size="10">Baseline Benchmark</text>
+</svg>

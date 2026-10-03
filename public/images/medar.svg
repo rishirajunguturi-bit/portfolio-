@@ -1,0 +1,57 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="16" fill="#121215"/>
+  <path d="M0 80H800M0 160H800M0 240H800M0 320H800M0 400H800" stroke="#1F1F24" stroke-width="1"/>
+  <path d="M160 0V500M320 0V500M480 0V500M640 0V500" stroke="#1F1F24" stroke-width="1"/>
+
+  <!-- Window Container -->
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#0B0B0E" stroke="#27272A" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <rect x="50" y="40" width="700" height="44" rx="12" fill="#18181B"/>
+  <circle cx="76" cy="62" r="5" fill="#EF4444"/>
+  <circle cx="94" cy="62" r="5" fill="#F59E0B"/>
+  <circle cx="112" cy="62" r="5" fill="#10B981"/>
+  <rect x="150" y="52" width="280" height="20" rx="6" fill="#27272A"/>
+  <text x="162" y="66" fill="#A1A1AA" font-family="monospace" font-size="11">medar.sim/medical-simulation</text>
+
+  <!-- AR 3D Viewport Simulation -->
+  <rect x="75" y="105" width="410" height="330" rx="10" fill="#141418" stroke="#27272A"/>
+  <text x="95" y="135" fill="#F5F5F5" font-family="sans-serif" font-size="14" font-weight="600">AR Medical Simulation Module</text>
+
+  <!-- 3D Holographic Model Graphic -->
+  <rect x="95" y="155" width="370" height="260" rx="8" fill="#0D0D10" stroke="#1F1F24"/>
+  <!-- Crosshair & Medical Overlay Grid -->
+  <circle cx="280" cy="280" r="80" stroke="#7C3AED" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+  <circle cx="280" cy="280" r="40" stroke="#3B82F6" stroke-width="1.5" fill="none"/>
+  <line x1="280" y1="180" x2="280" y2="380" stroke="#7C3AED" stroke-width="1" stroke-dasharray="2 2"/>
+  <line x1="180" y1="280" x2="380" y2="280" stroke="#7C3AED" stroke-width="1" stroke-dasharray="2 2"/>
+  <rect x="260" y="260" width="40" height="40" rx="8" fill="#7C3AED" fill-opacity="0.3" stroke="#7C3AED" stroke-width="2"/>
+  <text x="266" y="284" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="700">AR</text>
+
+  <!-- Live Pulse Line -->
+  <path d="M110 370 L170 370 L185 340 L200 400 L215 350 L230 370 L440 370" stroke="#10B981" stroke-width="2" fill="none"/>
+  <text x="110" y="360" fill="#10B981" font-family="monospace" font-size="10">ECG MONITOR: 72 BPM</text>
+
+  <!-- Right Side Dashboard & Leaderboard -->
+  <rect x="505" y="105" width="220" height="330" rx="10" fill="#141418" stroke="#27272A"/>
+  <text x="525" y="135" fill="#F5F5F5" font-family="sans-serif" font-size="14" font-weight="600">Leaderboard & Quiz</text>
+
+  <!-- Score Card 1 -->
+  <rect x="525" y="155" width="180" height="50" rx="6" fill="#1A1A20" stroke="#7C3AED" stroke-width="1"/>
+  <text x="537" y="176" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="600">Interactive Quiz #1</text>
+  <text x="537" y="193" fill="#10B981" font-family="sans-serif" font-size="11">Progress: 100% Passed</text>
+
+  <!-- Score Card 2 -->
+  <rect x="525" y="220" width="180" height="50" rx="6" fill="#1A1A20"/>
+  <text x="537" y="241" fill="#F5F5F5" font-family="sans-serif" font-size="12" font-weight="600">Surgical Simulation</text>
+  <text x="537" y="258" fill="#F59E0B" font-family="sans-serif" font-size="11">Active Assessment</text>
+
+  <!-- Role Dashboard Pill -->
+  <rect x="525" y="285" width="180" height="40" rx="6" fill="#18181B" stroke="#27272A"/>
+  <text x="537" y="310" fill="#A1A1AA" font-family="sans-serif" font-size="11">Role: Trainee / Instructor</text>
+
+  <rect x="525" y="340" width="180" height="80" rx="6" fill="#0D0D10" stroke="#1F1F24"/>
+  <text x="537" y="362" fill="#7C3AED" font-family="sans-serif" font-size="11" font-weight="700">MySQL & Node.js API</text>
+  <text x="537" y="380" fill="#A1A1AA" font-family="sans-serif" font-size="10">Role-based Access Control</text>
+  <text x="537" y="396" fill="#A1A1AA" font-family="sans-serif" font-size="10">Real-time Metrics Tracking</text>
+</svg>
