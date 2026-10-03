@@ -2,69 +2,69 @@ export const projects = [
   {
     id: "01",
     title: "MedAR – AR-Based Medical Training Platform",
-    category: "Full-Stack & AR Technology",
-    description: "An augmented-reality-based medical training platform designed for interactive simulation modules, progress tracking, and role-based training.",
-    problem: "Providing interactive, risk-free medical training simulations with real-time performance evaluation and leaderboard tracking.",
-    technologies: ["Node.js", "Express.js", "MySQL", "REST APIs", "Web VR/AR", "JavaScript"],
+    category: "Full-Stack & AR Simulation",
+    description: "An AR-based medical training platform designed to provide interactive learning experiences through simulation modules, progress tracking, quizzes, and role-based dashboards.",
     features: [
-      "Interactive medical simulation modules",
-      "Role-based dashboards (Trainee / Instructor)",
-      "Automated quizzes and progress tracking",
-      "Leaderboard and backend API integrations with MySQL database"
+      "Interactive AR/simulation-based medical training modules",
+      "Role-based dashboards for trainees, instructors, and administrators",
+      "Quiz and assessment functionality",
+      "Module progress tracking",
+      "Leaderboard functionality",
+      "Backend API integration with MySQL"
     ],
-    image: "/images/medar.svg",
-    github: "https://github.com/rishirajunguturi-bit",
-    live: null
+    implementation: "Built the application using a frontend interface connected to Node.js and Express.js backend APIs, with MySQL used for authentication, module management, and application data.",
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MySQL", "REST APIs", "Web VR/AR"],
+    githubUrl: "", // Configurable: paste repository URL here later
+    liveUrl: ""
   },
   {
     id: "02",
-    title: "SkillTern",
+    title: "SkillTern – Internship Matching Platform",
     category: "Full-Stack Web App",
-    description: "An internship matching platform designed to connect students with companies and help students manage skills and placement opportunities.",
-    problem: "Bridging the gap between students seeking internships and recruiters by streamlining skill tracking and placement workflows.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "bcrypt"],
+    description: "A web-based internship platform designed to connect students with relevant internship opportunities through profiles, filtering, and skill-based matching.",
     features: [
-      "Student profiles & dashboard for tracking applications",
-      "Company dashboard for publishing opportunities & candidate discovery",
-      "Skill-based matching and responsive filtering interface",
-      "Secure Authentication with JWT & bcrypt encryption"
+      "Student profile creation & management",
+      "Internship opportunity browsing",
+      "Internship filtering & search",
+      "Skill-based matching logic",
+      "Responsive user interface"
     ],
-    image: "/images/skilltern.svg",
-    github: "https://github.com/rishirajunguturi-bit",
-    live: null
+    implementation: "Developed the platform with a responsive frontend and implemented internship filtering and basic skill-based matching logic to help students discover relevant opportunities.",
+    technologies: ["React", "JavaScript", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+    githubUrl: "", // Configurable: paste repository URL here later
+    liveUrl: ""
   },
   {
     id: "03",
     title: "Farm-to-Market Platform",
     category: "Full-Stack Web App",
-    description: "A digital platform designed to improve connections between farmers and buyers while addressing transportation and market-access challenges.",
-    problem: "Reducing agricultural distribution bottlenecks and improving price transparency for smallholder farmers.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+    description: "An intelligent farm-to-market platform designed to help farmers make better market decisions and improve coordination between farmers, buyers, and transportation.",
     features: [
-      "Farmer and buyer interactive workflows",
-      "Direct product listings with price discovery",
-      "Shared transportation logistics concept",
-      "Robust RESTful API backend integration"
+      "Farmer and buyer profiles",
+      "Market/buyer discovery",
+      "Shared transportation coordination",
+      "Farm-to-market decision support",
+      "Backend API and database integration"
     ],
-    image: "/images/farm-to-market.svg",
-    github: "https://github.com/rishirajunguturi-bit",
-    live: null
+    implementation: "Engineered a digital platform with RESTful APIs to facilitate price discovery, buyer matching, and shared transportation logistics for local farmers.",
+    technologies: ["React", "JavaScript", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+    githubUrl: "", // Configurable: paste repository URL here later
+    liveUrl: ""
   },
   {
     id: "04",
     title: "Paddy Yield Prediction",
     category: "AI / Machine Learning",
     description: "A machine-learning project that predicts agricultural crop yield using relevant agricultural and meteorological parameters.",
-    problem: "Assisting agricultural planning by predicting crop yield under varying soil and weather conditions.",
-    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"],
-    models: ["Random Forest", "KNN", "Decision Tree", "SVM"],
     features: [
       "Feature engineering on soil & meteorological parameters",
       "Model evaluation across Random Forest, KNN, Decision Tree, & SVM",
       "Predictive analysis pipeline for agricultural decision-making"
     ],
-    image: "/images/paddy-yield.svg",
-    github: "https://github.com/rishirajunguturi-bit",
-    live: null
+    implementation: "Processed agricultural datasets using Python, Pandas, and NumPy, and evaluated regression and ensemble models in Scikit-Learn for agricultural yield forecasting.",
+    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"],
+    models: ["Random Forest", "KNN", "Decision Tree", "SVM"],
+    githubUrl: "", // Configurable: paste repository URL here later
+    liveUrl: ""
   }
 ];

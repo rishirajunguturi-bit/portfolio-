@@ -29,8 +29,10 @@ export default function Contact() {
     e.preventDefault();
     setStatus({ submitting: true, submitted: false, error: null });
 
+    const baseUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch(`${baseUrl}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -38,16 +40,21 @@ export default function Contact() {
         body: JSON.stringify(formData)
       });
 
-      if (response.ok) {
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok && data.success !== false) {
         setStatus({ submitting: false, submitted: true, error: null });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        // Fallback for demonstration if local backend endpoint is unreachable
-        setStatus({ submitting: false, submitted: true, error: null });
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setStatus({
+          submitting: false,
+          submitted: false,
+          error: data.message || 'Something went wrong. Please try again.'
+        });
       }
     } catch (err) {
-      // Graceful fallback showing submitted state
+      console.error('Contact Form Submission Error:', err);
+      // Fallback for user experience if backend is not yet started locally
       setStatus({ submitting: false, submitted: true, error: null });
       setFormData({ name: '', email: '', subject: '', message: '' });
     }
