@@ -6,7 +6,7 @@ import { errorHandler } from './middleware/errorHandler.js';
 const app = express();
 
 // Middleware
-const allowedOrigin = process.env.CLIENT_URL || 'http://localhost:5173';
+const allowedOrigin = process.env.CLIENT_URL || 'https://portfolio-eicvxk8np-rishirajunguturi-7628s-projects.vercel.app/';
 
 app.use(cors({
   origin: allowedOrigin,
