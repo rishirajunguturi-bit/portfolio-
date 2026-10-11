@@ -87,7 +87,12 @@ export default function ProblemSolving() {
             {problemSolvingData.platforms.map((platform, idx) => {
               const CardWrapper = platform.url ? 'a' : 'div';
               const wrapperProps = platform.url
-                ? { href: platform.url, target: '_blank', rel: 'noopener noreferrer' }
+                ? {
+                    href: platform.url,
+                    target: '_blank',
+                    rel: 'noopener noreferrer',
+                    'aria-label': `View ${platform.name} profile`
+                  }
                 : {};
 
               return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2, Cpu, Code2, Terminal, ArrowUpRight } from 'lucide-react';
+import { CheckCircle2, ArrowUpRight } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 
 export default function ProjectCard({ project, index }) {
@@ -108,10 +108,11 @@ export default function ProjectCard({ project, index }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#18181B] hover:bg-[#222226] text-[#F5F5F5] border border-[#27272A] hover:border-[#7C3AED] font-semibold text-xs transition-all shadow-sm"
+              aria-label={`View ${project.title} repository on GitHub`}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#18181B] hover:bg-[#222226] text-[#F5F5F5] border border-[#27272A] hover:border-[#7C3AED] font-semibold text-xs transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
             >
               <GithubIcon size={16} />
-              <span>GitHub Repository</span>
+              <span>View on GitHub</span>
             </a>
           ) : (
             <div
@@ -119,7 +120,7 @@ export default function ProjectCard({ project, index }) {
               title="Repository URL can be added in src/data/projects.js"
             >
               <GithubIcon size={16} className="text-[#A1A1AA]/60" />
-              <span>GitHub Repository</span>
+              <span>View on GitHub</span>
               <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#27272A] text-[#A1A1AA]">Configurable</span>
             </div>
           )}

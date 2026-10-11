@@ -14,7 +14,7 @@ export const projects = [
     ],
     implementation: "Built the application using a frontend interface connected to Node.js and Express.js backend APIs, with MySQL used for authentication, module management, and application data.",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MySQL", "REST APIs", "Web VR/AR"],
-    githubUrl: "", // Configurable: paste repository URL here later
+    githubUrl: "https://github.com/rishirajunguturi-bit/MedAR-Training-Platform",
     liveUrl: ""
   },
   {
@@ -31,7 +31,7 @@ export const projects = [
     ],
     implementation: "Developed the platform with a responsive frontend and implemented internship filtering and basic skill-based matching logic to help students discover relevant opportunities.",
     technologies: ["React", "JavaScript", "Node.js", "Express.js", "MongoDB", "REST APIs"],
-    githubUrl: "", // Configurable: paste repository URL here later
+    githubUrl: "https://github.com/rishirajunguturi-bit/SkillTern",
     liveUrl: ""
   },
   {
@@ -48,12 +48,12 @@ export const projects = [
     ],
     implementation: "Engineered a digital platform with RESTful APIs to facilitate price discovery, buyer matching, and shared transportation logistics for local farmers.",
     technologies: ["React", "JavaScript", "Node.js", "Express.js", "MongoDB", "REST APIs"],
-    githubUrl: "", // Configurable: paste repository URL here later
+    githubUrl: "https://github.com/rishirajunguturi-bit/Farm-to-market",
     liveUrl: ""
   },
   {
     id: "04",
-    title: "Paddy Yield Prediction",
+    title: "Rice Yield Predictor",
     category: "AI / Machine Learning",
     description: "A machine-learning project that predicts agricultural crop yield using relevant agricultural and meteorological parameters.",
     features: [
@@ -64,7 +64,7 @@ export const projects = [
     implementation: "Processed agricultural datasets using Python, Pandas, and NumPy, and evaluated regression and ensemble models in Scikit-Learn for agricultural yield forecasting.",
     technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Machine Learning"],
     models: ["Random Forest", "KNN", "Decision Tree", "SVM"],
-    githubUrl: "", // Configurable: paste repository URL here later
+    githubUrl: "https://github.com/rishirajunguturi-bit/Rice-Yeild-Predictor",
     liveUrl: ""
   }
 ];

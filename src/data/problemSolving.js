@@ -5,31 +5,31 @@ export const problemSolvingData = {
   platforms: [
     {
       name: "LeetCode",
-      url: null, // Non-clickable placeholder until user provides exact profile URL
+      url: "https://leetcode.com/u/rishirajunguturi_18/",
       description: "Data Structures & Algorithms problem solving",
       tag: "DSA Practice"
     },
     {
       name: "CodeChef",
-      url: null, // Non-clickable placeholder until user provides exact profile URL
+      url: "https://www.codechef.com/users/rishi_unguturi",
       description: "Competitive programming contests & problem sets",
       tag: "Contests"
     },
     {
       name: "Codeforces",
-      url: null, // Non-clickable placeholder until user provides exact profile URL
+      url: "https://codeforces.com/profile/rishirajunguturi",
       description: "Algorithmic rounds & competitive problem sets",
       tag: "Competitive"
     },
     {
       name: "InterviewBit",
-      url: null, // Non-clickable placeholder until user provides exact profile URL
+      url: "https://www.interviewbit.com/profile/unguturi-rishi-raj/",
       description: "Topic-wise DSA preparation & mock assessments",
       tag: "Interview Prep"
     },
     {
       name: "HackerRank",
-      url: null, // Non-clickable placeholder until user provides exact profile URL
+      url: "https://www.hackerrank.com/profile/rishi_unguturi",
       description: "Domain skill badges & algorithmic challenges",
       tag: "Skill Badges"
     }
