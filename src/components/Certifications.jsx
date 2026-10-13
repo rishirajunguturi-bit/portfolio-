@@ -43,9 +43,16 @@ export default function Certifications() {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-bold text-[#F5F5F5] group-hover:text-white transition-colors">
-                    {cert.title}
-                  </h3>
+                  <a
+                    href={cert.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block focus:outline-none"
+                  >
+                    <h3 className="text-lg font-bold text-[#F5F5F5] group-hover:text-white hover:text-[#7C3AED] transition-colors">
+                      {cert.title}
+                    </h3>
+                  </a>
                   <span className="text-xs text-[#7C3AED] font-semibold block mt-1">
                     {cert.issuer}
                   </span>
@@ -68,9 +75,8 @@ export default function Certifications() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => {
-                    if (cert.link === '#') {
+                    if (!cert.link || cert.link === '#') {
                       e.preventDefault();
-                      alert('Certificate verification link placeholder. Add actual URL in certifications.js');
                     }
                   }}
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-[#18181B] hover:bg-[#222226] border border-[#27272A] hover:border-[#7C3AED]/50 text-xs font-semibold text-[#F5F5F5] transition-all"
